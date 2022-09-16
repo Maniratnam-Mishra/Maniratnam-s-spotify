@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+/*
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Varela Round', sans-serif;
+*/
+
+body{
+    background-color: #0c1012;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul li{
+padding: 0 12px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+.brand img{
+    padding:  0 8px;
+    width: 55px;
+}
+.brand {
+    display: flex;
+    align-items: center; 
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 35px;
+    background-image: url('banner.png');
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    }
+.icons{
+    margin: 12px 0;
+}
+
+.icons i{
+    padding: 0 24px;
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 99vw;
+    cursor: pointer;
+    
+    
+}
+.songItem{
+border-radius: 15px;
+height: 50px;
+display: flex;
+background-color: #0c1012;
+margin: 12px 0;
+align-items: center;
+justify-content: space-between;
+}
+.songItem img{
+width: 45px;
+margin: 0 20px;
+
+}
+.timeStamp{
+    margin: 0 15px;
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songItemContainer{
+margin-top: 54px;
+}
+.songInfo{
+    position: absolute;
+    left: 9.5vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in ;
+}
+
+
+.song-slider{
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #010e01;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px #06da29;
+}
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(26, 19, 19);
+    }
+  }
